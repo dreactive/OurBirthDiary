@@ -1,0 +1,246 @@
+.container{
+    
+    position: relative;
+    top:50px;
+    display:flex;
+    flex-direction: column;
+}
+.select-boardType{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:100%;
+    margin:20px;
+}
+.btn-boardType {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    border: 0;
+    color: aliceblue;
+    padding-left: 10px;
+    overflow: hidden;
+    background-color: #8a7fce;
+    box-shadow: 0px 0px 10px #ddd;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.btn-boardType:hover {
+    transform: scale(1.03);
+}
+:is(#btn-myboard,#btn-tempboard,#btn-scrap)>span{
+    background-color: white;
+    color: #5A4EA4;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+:is(#btn-myboard,#btn-tempboard,#btn-scrap)>div{
+    color: white;
+    flex-grow: 1;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.boardContent{
+    display:flex;
+    flex-direction: row;
+}
+.board-list{
+    max-width:320px;
+    min-width: 200px;
+    background-color:white;
+    border-radius:30px;
+    padding:20px;
+      border:2px solid #eaeaea;
+}
+
+/* 카드 리스트 */
+.items .item-card {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0 8px 8px 8px;
+  margin-bottom: 8px;
+  background: #fafafa;
+}
+.item-content {
+  display: flex;
+  align-items: flex-end
+}
+.item-content .rank {
+  margin-right: 6px;
+  font-size: 12px;
+  color: #555;
+}
+.item-content .tag {
+  background: #f4f4f4;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 10px;
+  margin-right: 10px;
+  word-break: keep-all
+}
+.item-content p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #333;
+  word-break: keep-all
+}
+.item-content>.bbs-attachment-img{
+	width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #ccc;
+    margin-right: 10px;
+}
+
+
+.board-view{
+    display:flex;
+    flex-direction: column;
+    max-width:560px;
+}
+ 
+
+.postBox {
+	position:relative;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #ddd;
+    margin : 0 auto;
+    margin-bottom: 20px;
+    width: 90%;
+    height:auto;
+    background-color: white;
+    
+}
+.title{
+	text-align:center;
+    font-size:18px;
+    box-sizing:border-box;
+    padding-top:10px;
+    word-break: keep-all
+}
+.boardName{
+	text-align:right;
+    font-size:14px;
+    box-sizing:border-box;
+    padding-right:20px;
+	padding-bottom:20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color:#666666;
+    font-size:16px;
+    padding-right:20px;
+}
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-right: 10px;
+}
+.postBox>p{
+    padding:10px;
+    font-size:18px;
+    word-break: keep-all
+}
+.attachment {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+.attachment div {
+    width: 100px;
+    height: 100px;
+    background: #ddd;
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.commentSection{
+	transition: all 0.4s ease;
+	opacity:1;
+}
+.commentSection.collapsed{
+	
+	opacity:0;
+	transform: translate(-200px, 0);
+	transition: all 0.4s ease;
+	
+}
+.commentTitle{
+	text-align:center;
+	margin-bottom:20px;
+}
+.commentList{
+	display:flex;
+	flex-direction:column;
+	gap:18px;
+}
+.comment{
+	display:flex;
+	flex-direction:row;
+}
+.comment-left, .comment-right {
+	display:flex;
+	flex-direction:column;
+	justify-content: space-between;
+}
+.comment-likey, .comment-info{
+	display:flex;
+	flex-direction:row;
+	
+	text-align:center;
+    font-size:16px;
+    color:#666666;
+    justify-content: space-evenly;
+}
+.comment-info{
+	display:flex;
+	flex-direction:row;
+	justify-content: flex-start;
+	text-align:center;
+    font-size:16px;
+    color:#666666;
+	width:280px;
+	gap:20px;
+}
+.comment-left>img{
+	width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+	margin:auto auto;
+}
+.comment-content{
+	
+    font-size:18px;
+	margin:3px;
+}
+button.reply {
+	background:transparent;
+	border:0;
+	text-align:left;
+	font-size:14px;
+	width:110px;
+}

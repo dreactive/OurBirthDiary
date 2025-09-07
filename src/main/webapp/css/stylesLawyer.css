@@ -1,0 +1,229 @@
+/* ─────────────────────────────────────────────────────────────
+   1. 기본 설정 (Reset / Global)
+───────────────────────────────────────────────────────────── */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   2. 헤더(Header)
+───────────────────────────────────────────────────────────── */
+.header {
+  text-align: center;
+  padding: 50px 0 10px;
+}
+
+.header-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-link {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2e7d32;
+  text-decoration: none;
+  display: inline-block;            /* transform 적용을 위해 inline-block으로 설정 */
+  transition: transform 0.2s ease; 
+
+}
+
+.header-link:hover {
+  color: #245e20;
+  transform: scale(1.1);  
+}
+
+.header-separator {
+  font-size: 32px;
+  color: #2e7d32;
+  user-select: none;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   3. 필터 섹션(Filter Section)
+───────────────────────────────────────────────────────────── */
+.filter-section {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 40px;
+  background: #f3f3f3;
+  border-radius: 16px;
+}
+
+.filter-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1.7;
+}
+
+.filter-group.location {
+  flex: 2;
+}
+
+.filter-group label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.location-group {
+  display: flex;
+  gap: 12px;
+}
+
+.filter-group select,
+.location-group select {
+  flex: 1;
+  padding: 19px 12px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  appearance: none;
+  cursor: pointer;
+}
+
+.action-btn {
+  padding: 20px 20px;
+  font-size: 14px;
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.action-btn:hover {
+  background: #f0f0f0;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   4. 변호사 카드 그리드(Lawyer Grid)
+───────────────────────────────────────────────────────────── */
+.lawyer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.lawyer-card {
+  display: flex;
+  background: #f3f3f3;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.lawyer-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.lawyer-card img {
+  width: 120px;
+  height: 150px;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+.lawyer-info h3 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+.lawyer-info p {
+  margin: 0 0 8px;
+  color: #666;
+  font-size: 14px;
+}
+
+.lawyer-info ul {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.lawyer-info li {
+  margin-bottom: 4px;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   5. 모달(Modal)
+───────────────────────────────────────────────────────────── */
+.modal {
+  position: fixed;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* 모달 내부 콘텐츠 */
+.modal-img {
+  float: left;
+  width: 170px;
+  height: 230px;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.modal-text {
+  overflow: hidden; /* float 해제 */
+}
+
+ .fixed-register-btn {
+  margin-left: 22%;
+  cursor: pointer;;
+  position:fixed;
+  top:90vh;
+   
+}
+.fixed-register-btn:hover {
+  background: #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.fixed-register-btn>img{
+  width: 30px;
+  
+}

@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fa;
+}
+
+/* 캘린더 전체 */
+.calendar-wrapper {
+	position:relative;
+	top:70px;
+    width: 80%;
+    height: 80%;  /* 꼭 명시 */
+    min-height: 600px;  /* 최소 높이 보장 */
+    min-width:800px;
+    box-sizing: border-box;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    overflow-y: auto;
+}
+
+#calendar {
+    width: 100%;
+    flex: 1; /* 공간을 최대한 채움 */
+    min-height: 500px;
+    font-size: 13px;
+}
+
+/* 오른쪽 위에 띄우는 폼 */
+.popup-form {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 260px;
+    background: white;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* 입력 필드 스타일 */
+.popup-form input {
+    padding: 8px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* 버튼 영역 */
+.form-buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.form-buttons button {
+    flex: 1;
+    padding: 8px;
+    font-size: 13px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#save-event {
+    background: #4da6ff;
+    color: white;
+}
+
+#delete-event {
+    background: #ff5c5c;
+    color: white;
+}
+
+#cancel-event {
+    background: #ccc;
+}
+
+/* 우하단 고정 버튼 */
+.floating-button {
+    position: fixed;
+    bottom: 50px;
+    right: 110px;
+    background: #4da6ff;
+    color: white;
+    border: none;
+    border-radius: 32px;
+    padding: 14px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 숨김 클래스 */
+.hidden {
+    display: none;
+}

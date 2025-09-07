@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    padding: 30px;
+}
+
+.terms-container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.terms-box {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 15px;
+    white-space: pre-wrap;
+    background: #fff;
+    margin-bottom: 15px;
+}
+
+.agree-group {
+    margin-bottom: 25px;
+}
+
+label {
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 24px;
+    font-size: 16px;
+    background-color: #5c6bc0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

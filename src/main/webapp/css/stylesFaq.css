@@ -1,0 +1,119 @@
+body {
+    font-family: 'Apple SD Gothic Neo', sans-serif;
+    background: #f9f9fb;
+    color: #333;
+}
+
+.faq-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.faq-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    font-size:32px;
+}
+
+.faq-header .icon {
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    padding: 8px 6px;
+    border-radius: 6px;
+    width: auto;
+    height:70px;
+}
+
+.faq-tabs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.faq-tabs .tab {
+    padding: 6px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 24px;
+    background: linear-gradient(to right, #7370B1 50%, #e0e0e0 50%);
+    
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.4s ease, color 0.4s ease;
+}
+.faq-tabs .tab:hover{
+  background-position: left bottom;
+  color:white;
+	scale:1.05;
+}
+.faq-tabs .tab.active {
+    color: white;
+    font-weight: bold;
+    background-position: left bottom;
+  color:white;
+}
+
+.faq-list .faq-item {
+    border-top: 1px solid #ccc;
+    padding: 24px 0;
+}
+
+.faq-list .faq-item:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-list {
+	opacity:1;
+	height:auto;
+    transition: opacity 0.4s ease;
+}
+
+.faq-list.inactive {
+	opacity:0;
+	height:0;
+	
+    transition: opacity 0.4s ease;
+}
+
+.faq-item .question {
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    padding-right: 20px;
+}
+
+.faq-item .question::after {
+    content: '⌄';
+    position: absolute;
+    right: 0;
+    transform: rotate(0deg);
+}
+
+.faq-item.open .question::after {
+    transform: rotate(180deg);
+}
+
+.faq-item .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding-left: 10px;
+    font-size: 24px;
+    color: #555;
+    margin-top: 10px;
+    margin-left : 120px;
+}
+
+.faq-item.open .answer {
+    max-height: 300px;
+    margin-top: 10px;
+    margin-left : 120px;
+}  
+.Q, .A {
+    color: #7370B1;
+} 

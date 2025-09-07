@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fc;
+    margin: 0;
+    padding: 50px;
+}
+
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.license-field,
+.school-field {
+    display: flex;
+    gap: 10px;
+}
+
+.license-field input,
+.school-field input {
+    flex: 1;
+}
+
+.button-style {
+    padding: 10px 16px;
+    background-color: #eaebf9;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button-style:hover {
+    background-color: #dcdff1;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.buttons .button-style {
+    width: 48%;
+}
+
+/* 팝업 */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 90%;
+    z-index: 999;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.popup-content {
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#schoolList {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+#schoolList li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+#schoolList li:hover {
+    background-color: #f1f1f1;
+}
